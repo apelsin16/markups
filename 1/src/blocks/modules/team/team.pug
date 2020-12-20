@@ -1,3 +1,25 @@
 section.section.team
     h2.section__title Meet our team
-    p.section__text.section__text--after Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
+    p.section__text.section__text--after.left Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
+
+    .team__content
+        .team__left
+            img(class='team__main-foto' src='./img/avatar.jpg')
+        .team__info
+            h3.info__title mark waugh
+            p.section__text Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
+            ul.info__link-list
+                li.info__link-item
+                    a(class='info__link' href="facebook.com") Facebook    
+                li.info__link-item
+                    a(class='info__link' href="dribble.com") Dribble
+                li.info__link-item
+                    a(class='info__link' href="behance.com") Behance
+                li.info__link-item
+                    a(class='info__link' href="twitter.com") Twitter 
+        ul.team__galery.galery
+            - for (var i = 0; i < 4; i++)
+              li.galery__item 
+                img(class='galery__photo' src='./img/avatar.jpg' )
+                p.galery__name sokina jue  
+                 
