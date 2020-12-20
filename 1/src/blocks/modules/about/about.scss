@@ -1,0 +1,107 @@
+.about {
+    @include container;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    grid-gap: 75px;
+    border-bottom: 2px solid #ececec;
+
+    &__left {
+        min-width: 41.6%;
+    }
+
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 34px;
+    }
+
+    &-item {
+
+        &__title {
+            font-size: 24px;
+            font-family: "open_sanssemibold", sans-serif;
+            color: rgba(0, 0, 0, 0.702);
+            line-height: 1.2;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 44px;
+                height: 44px;
+                background-repeat: no-repeat;
+                margin-bottom: 30px;
+            }
+
+            &.management {
+                &::before {
+                    background-image: url(../img/svg/settings.svg);
+                }
+            }
+
+            &.design {
+                &::before {
+                    background-image: url(../img/svg/pencil.svg);
+                }
+            }
+
+            &.logo {
+                &::before {
+                    background-image: url(../img/svg/diamond.svg);
+                }
+            }
+            &.animation {
+                &::before {
+                    background-image: url(../img/svg/truck.svg);
+                }
+            }
+        }
+
+
+        &__text {
+            @include text;
+        }
+    }
+}
+
+.section {
+    padding-bottom: 100px;
+
+    &__title {
+        @include title;
+        margin-bottom: 50px;
+
+        &--center {
+            text-align: center;
+        }
+    }
+
+    &__text {
+        @include text;
+
+        &--center {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &--after::after {
+            content: "";
+            display: block;
+            width: 130px;
+            height: 2px;
+            background-color: #ff3b3b;
+            margin: 30px auto 0;
+        }
+    }
+
+    &__link {
+        @include link;
+        margin-top: 80px;
+        border: 2px solid #ff0000;
+        color: #ff0000;
+    }
+}
+

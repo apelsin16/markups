@@ -1,0 +1,20 @@
+section.section.products
+    h2.section__title.section__title--center.section__title--after feature products
+    p.section__text.section__text--center.section__text--after Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor incididunt ut labore et.
+    
+    ul.products__list
+        li.products__item
+            button(class='products__button', id='all' active) all
+        li.products__item
+            button.products__button#print_template print template
+        li.products__item
+            button.products__button#web_template web template
+        li.products__item
+            button.products__button#user_interface user interface
+        li.products__item
+            button.products__button#mock-up mock-up   
+
+    .products__images
+        - for (var x = 0; x < 8; x++)
+            .products__img
+                

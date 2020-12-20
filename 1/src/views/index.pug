@@ -1,0 +1,18 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Agnecy Landing Page"
+
+block content
+	include ../blocks/modules/first-screen/first-screen
+	include ../blocks/modules/about/about
+	include ../blocks/modules/products/products
+	include ../blocks/modules/team/team
+	include ../blocks/modules/footer/footer
+
+
+
+block scripts
+	script(src="js/main.js")
+	//- script(src="js/vendor.js")

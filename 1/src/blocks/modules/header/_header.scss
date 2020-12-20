@@ -1,0 +1,31 @@
+.header {
+    @include container;
+    background-color: #313030;
+}
+
+.nav {
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link {
+        display: block;
+        font-family: "open_sansbold", sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 45px 20px 30px;
+        color: #e0e0e0;
+        font-size: 14px;
+
+        &:hover {
+            background-color: #ff3f40;
+            transition: 0.5s background-color;
+        }
+    }
+}
