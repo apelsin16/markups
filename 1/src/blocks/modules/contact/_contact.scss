@@ -1,0 +1,76 @@
+.contact {
+    @include container;
+    padding-top: 100px;
+
+    .section__text {
+        width: 50%;
+
+        &--after::after {
+            margin: 60px 0;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 7fr 4fr;
+        grid-gap: calc(100%/12);
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__input, &__textarea {
+        border: none;
+        outline: none;
+        background-color: #e5e5e5;
+        font-family: "open_sansregular", sans-serif;
+        color: rgba(0, 0, 0, 0.702);
+        line-height: 1.75;
+        border-radius: 10px;
+        padding: 25px 50px;
+    }
+
+    &__textarea {
+        display: block;
+        margin-top: 45px;
+        flex-basis: 100%;
+        resize: none;
+    }
+
+    &__input {
+        flex-basis: 45%;
+    }
+
+    &__submit {
+        flex-basis: 100%;
+        margin-top: 45px;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: "open_sansbold", sans-serif;
+        border: none;
+        font-size: 18px;
+        border-radius: 10px;
+        background-color: #ff3b3b;
+    }
+
+    &__info {
+        background-color: #2d2d2d;
+        padding: 140px 80px;
+        font-family: "open_sansregular", sans-serif;
+        color: rgba(255, 255, 255, 0.8);
+
+        a {
+            display: block;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    &__title {
+        font-family: "open_sansbold", sans-serif;
+        text-transform: uppercase;
+        line-height: 1.892;
+    }
+}
